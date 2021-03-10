@@ -1,3 +1,5 @@
+// 'use strict'
+
 $(document).ready(function () {
   let imageNumberTopRow = $(".topRow div").length;
   let imageNumberBotRow = $(".topRow div").length;
@@ -23,7 +25,7 @@ $(document).ready(function () {
           .animate({right: "0"},
             {
               duration: 500,
-              complete: function () {
+              complete: () => {
                 $(this).removeAttr('style');
               }
             })
@@ -36,7 +38,7 @@ $(document).ready(function () {
           .animate({right: "0"},
             {
               duration: 500,
-              complete: function () {
+              complete: () => {
                 $(this).removeAttr('style');
               }
             });
@@ -51,7 +53,7 @@ $(document).ready(function () {
           .animate({right: "0"},
             {
               duration: 500,
-              complete: function () {
+              complete: () => {
                 $(this).removeAttr('style');
               }
             });
@@ -69,7 +71,7 @@ $(document).ready(function () {
           .animate({right: "0"},
             {
               duration: 500,
-              complete: function () {
+              complete: () => {
                 $(this).removeAttr('style');
               }
             })
@@ -82,7 +84,7 @@ $(document).ready(function () {
           .animate({right: "0"},
             {
               duration: 500,
-              complete: function () {
+              complete: () => {
                 $(this).removeAttr('style');
               }
             });
@@ -97,7 +99,7 @@ $(document).ready(function () {
           .animate({right: "0"},
             {
               duration: 500,
-              complete: function () {
+              complete: () => {
                 $(this).removeAttr('style');
                 $(".leftArrow").prop('disabled', false);
                 $(".rightArrow").prop('disabled', false);
@@ -107,7 +109,7 @@ $(document).ready(function () {
     });
   });
 
-  $(".leftArrow").click(function () {
+  $(".leftArrow").click(() => {
     let bufferTrFirstImg = $(".topRow div:first-child").html();
     let bufferBrFirstImg = $(".botRow div:first-child").html();
     let bufferTrNextImg, bufferBrNextImg;
@@ -127,7 +129,7 @@ $(document).ready(function () {
           .animate({left: "0"},
             {
               duration: 500,
-              complete: function () {
+              complete: () => {
                 $(this).removeAttr('style');
               }
             });
@@ -139,7 +141,7 @@ $(document).ready(function () {
           .animate({left: "0"},
             {
               duration: 500,
-              complete: function () {
+              complete: () => {
                 $(this).removeAttr('style');
               }
             });
@@ -162,7 +164,7 @@ $(document).ready(function () {
           .animate({left: "0"},
             {
               duration: 500,
-              complete: function () {
+              complete: () => {
                 $(this).removeAttr('style');
               }
             });
@@ -173,7 +175,7 @@ $(document).ready(function () {
           .animate({left: "-=50px"}, 700)
           .animate({left: "0"}, {
             duration: 500,
-            complete: function () {
+            complete: () => {
               $(this).removeAttr('style');
               $(".leftArrow").prop('disabled', false);
               $(".rightArrow").prop('disabled', false);

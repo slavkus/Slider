@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a38f47d3-5c7e-4f92-aa9e-f4dc281c35ee" name="Default Changelist" comment="">
+    <list default="true" id="a38f47d3-5c7e-4f92-aa9e-f4dc281c35ee" name="Default Changelist" comment="- changed animations, removed attribute style after the animation is done. Right arrow didn't work properly due to &quot;leftover&quot; code from clicking left arrow. Attribute &quot;left=0&quot; got left behind, and caused the animation on the right arrow to be stuck.&#10;- duration was also adjusted, along with the distance of the object traveling right or left">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/main.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.min.js" afterDir="false" />
     </list>
@@ -109,8 +105,16 @@
       <workItem from="1615308632273" duration="7514000" />
       <workItem from="1615376414086" duration="580000" />
       <workItem from="1615382396539" duration="7287000" />
-      <workItem from="1615398921864" duration="331000" />
+      <workItem from="1615398921864" duration="2335000" />
     </task>
+    <task id="LOCAL-00001" summary="- changed animations, removed attribute style after the animation is done. Right arrow didn't work properly due to &quot;leftover&quot; code from clicking left arrow. Attribute &quot;left=0&quot; got left behind, and caused the animation on the right arrow to be stuck.&#10;- duration was also adjusted, along with the distance of the object traveling right or left">
+      <created>1615399518275</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1615399518276</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,7 +122,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="- transfered external css, js loads from body to head&#10;- added defer flag to main.js&#10;- changed tags for left and right arrow to &lt;button&gt;, they&#10;are still encapsulated in &lt;div&gt; tag with class arrows for positioning&#10;&#9;* tweaked padding in main.css for both arrow individually&#10;- tweaks on most of the elements in main.css for positioning&#10;- removed horizontal scrollbar with support for all browsers&#10;- wrapped images in &lt;div&gt; with class slider, still part of the container &lt;div&gt;&#10;- implemented SASS&#10;&#9;* Added variables for various stylings&#10;&#9;* Added nesting in multiple classes&#10;&#9;* Added addon.scss which shortens the code in main.scss&#10;- implemented Babel with Node&#10;&#9;* Added babel.config.json and enabled env preset&#10;- implemented UglifyJS and csso-cli (css minification) with Node&#10;&#9;* NOTE: if it doesn't detect auto. command in terminal for manual minification&#10;&#9;&#9;&quot;uglifyjs js/main.js -c -m -o js/main.min.js&quot;&#10;&#9;* Added main.min.js, main.min.css -&gt; minified code" />
-    <option name="LAST_COMMIT_MESSAGE" value="- transfered external css, js loads from body to head&#10;- added defer flag to main.js&#10;- changed tags for left and right arrow to &lt;button&gt;, they&#10;are still encapsulated in &lt;div&gt; tag with class arrows for positioning&#10;&#9;* tweaked padding in main.css for both arrow individually&#10;- tweaks on most of the elements in main.css for positioning&#10;- removed horizontal scrollbar with support for all browsers&#10;- wrapped images in &lt;div&gt; with class slider, still part of the container &lt;div&gt;&#10;- implemented SASS&#10;&#9;* Added variables for various stylings&#10;&#9;* Added nesting in multiple classes&#10;&#9;* Added addon.scss which shortens the code in main.scss&#10;- implemented Babel with Node&#10;&#9;* Added babel.config.json and enabled env preset&#10;- implemented UglifyJS and csso-cli (css minification) with Node&#10;&#9;* NOTE: if it doesn't detect auto. command in terminal for manual minification&#10;&#9;&#9;&quot;uglifyjs js/main.js -c -m -o js/main.min.js&quot;&#10;&#9;* Added main.min.js, main.min.css -&gt; minified code" />
+    <MESSAGE value="- changed animations, removed attribute style after the animation is done. Right arrow didn't work properly due to &quot;leftover&quot; code from clicking left arrow. Attribute &quot;left=0&quot; got left behind, and caused the animation on the right arrow to be stuck.&#10;- duration was also adjusted, along with the distance of the object traveling right or left" />
+    <option name="LAST_COMMIT_MESSAGE" value="- changed animations, removed attribute style after the animation is done. Right arrow didn't work properly due to &quot;leftover&quot; code from clicking left arrow. Attribute &quot;left=0&quot; got left behind, and caused the animation on the right arrow to be stuck.&#10;- duration was also adjusted, along with the distance of the object traveling right or left" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#File_Watchers" timestamp="1615309249697">
@@ -133,10 +138,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="210" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1600.0.1600.860@0.0.1920.1040" timestamp="1613395657925" />
-    <state x="585" y="114" width="820" height="851" key="CommitChangelistDialog2" timestamp="1615392092743">
+    <state x="585" y="114" width="820" height="851" key="CommitChangelistDialog2" timestamp="1615401192217">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="114" width="820" height="851" key="CommitChangelistDialog2/0.0.1920.1040/-1600.0.1600.860@0.0.1920.1040" timestamp="1615392092743" />
+    <state x="585" y="114" width="820" height="851" key="CommitChangelistDialog2/0.0.1920.1040/-1600.0.1600.860@0.0.1920.1040" timestamp="1615401192217" />
     <state x="594" y="298" width="662" height="666" key="EditFileWatcherDialog" timestamp="1615386982783">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -218,6 +223,10 @@
     </state>
     <state x="-1299" y="72" key="SettingsEditor/0.0.1920.1040/-1600.0.1600.860@-1600.0.1600.860" timestamp="1613937436048" />
     <state x="361" y="87" key="SettingsEditor/0.0.1920.1040/-1600.0.1600.860@0.0.1920.1040" timestamp="1615387172114" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1615399544573">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1600.0.1600.860@0.0.1920.1040" timestamp="1615399544573" />
     <state x="176" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1615398943738">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
