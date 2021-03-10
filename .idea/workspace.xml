@@ -1,25 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a38f47d3-5c7e-4f92-aa9e-f4dc281c35ee" name="Default Changelist" comment="- transfered external css, js loads from body to head&#10;- added defer flag to main.js&#10;- changed tags for left and right arrow to &lt;button&gt;, they&#10;are still encapsulated in &lt;div&gt; tag with class arrows for positioning&#10;&#9;* tweaked padding in main.css for both arrow individually&#10;- tweaks on most of the elements in main.css for positioning&#10;- removed horizontal scrollbar with support for all browsers&#10;- wrapped images in &lt;div&gt; with class slider, still part of the container &lt;div&gt;&#10;- implemented SASS&#10;&#9;* Added variables for various stylings&#10;&#9;* Added nesting in multiple classes&#10;&#9;* Added addon.scss which shortens the code in main.scss&#10;- implemented Babel with Node&#10;&#9;* Added babel.config.json and enabled env preset&#10;- implemented UglifyJS and csso-cli (css minification) with Node&#10;&#9;* NOTE: if it doesn't detect auto. command in terminal for manual minification&#10;&#9;&#9;&quot;uglifyjs js/main.js -c -m -o js/main.min.js&quot;&#10;&#9;* Added main.min.js, main.min.css -&gt; minified code">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/addon.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/main.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/main.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/main.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/mainBackup.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/main.min.js" afterDir="false" />
+    <list default="true" id="a38f47d3-5c7e-4f92-aa9e-f4dc281c35ee" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/html.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/js.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/js.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/usage.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/usage.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.min.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,6 +109,7 @@
       <workItem from="1615308632273" duration="7514000" />
       <workItem from="1615376414086" duration="580000" />
       <workItem from="1615382396539" duration="7287000" />
+      <workItem from="1615398921864" duration="331000" />
     </task>
     <servers />
   </component>
@@ -228,11 +218,11 @@
     </state>
     <state x="-1299" y="72" key="SettingsEditor/0.0.1920.1040/-1600.0.1600.860@-1600.0.1600.860" timestamp="1613937436048" />
     <state x="361" y="87" key="SettingsEditor/0.0.1920.1040/-1600.0.1600.860@0.0.1920.1040" timestamp="1615387172114" />
-    <state x="176" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1615382395125">
+    <state x="176" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1615398943738">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1453" y="287" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1600.0.1600.860@-1600.0.1600.860" timestamp="1613919246782" />
-    <state x="176" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1600.0.1600.860@0.0.1920.1040" timestamp="1615382395125" />
+    <state x="176" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1600.0.1600.860@0.0.1920.1040" timestamp="1615398943738" />
     <state x="-1137" y="180" width="672" height="678" key="search.everywhere.popup" timestamp="1613661047586">
       <screen x="-1600" y="0" width="1600" height="860" />
     </state>

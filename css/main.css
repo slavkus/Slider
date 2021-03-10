@@ -78,8 +78,8 @@ body::-webkit-scrollbar {
   position: absolute;
   height: 410px;
   width: 1230px;
-  top: 25%;
-  right: 300px;
+  top: 16%;
+  right: 350px;
 }
 
 /* Parents (Images) */
@@ -125,7 +125,7 @@ img {
   position: absolute;
   width: 60px;
   height: 130px;
-  right: 320px;
+  right: 370px;
   top: 53%;
 }
 
@@ -167,7 +167,7 @@ img {
   width: 300px;
   height: 296px;
   right: 0;
-  top: 22%;
+  top: 13%;
 }
 
 .textHead {
