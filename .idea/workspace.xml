@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a38f47d3-5c7e-4f92-aa9e-f4dc281c35ee" name="Default Changelist" comment="- changed animations, removed attribute style after the animation is done. Right arrow didn't work properly due to &quot;leftover&quot; code from clicking left arrow. Attribute &quot;left=0&quot; got left behind, and caused the animation on the right arrow to be stuck.&#10;- duration was also adjusted, along with the distance of the object traveling right or left">
+    <list default="true" id="a38f47d3-5c7e-4f92-aa9e-f4dc281c35ee" name="Default Changelist" comment="- changed some of the code in main.js to be up to ES6 standard. Mostly added arrow functions, where I could, rest was attempted to changed, but retraced due to breaking the functionalities.">
+      <change afterPath="$PROJECT_DIR$/.babelrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +42,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JsbtTreeLayoutManager">
+    <layout place="tools.popupGrunt">
+      <scroll-view-position x="0" y="0" />
+    </layout>
+  </component>
   <component name="ProjectId" id="1oWFrIvxzjakIpJC3Gfy418ceHH" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -50,7 +57,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/js/Backup" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/js/main.js" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
@@ -69,7 +76,12 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="main.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/js/main.js" working-dir="$PROJECT_DIR$/js">
+    <configuration name="main.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" node-parameters="-r babel-register" path-to-js-file="main.js" working-dir="$PROJECT_DIR$/js">
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="js.build_tools.grunt">
+      <node-interpreter value="project" />
+      <envs />
       <method v="2" />
     </configuration>
     <recent_temporary>
@@ -105,7 +117,8 @@
       <workItem from="1615308632273" duration="7514000" />
       <workItem from="1615376414086" duration="580000" />
       <workItem from="1615382396539" duration="7287000" />
-      <workItem from="1615398921864" duration="2335000" />
+      <workItem from="1615398921864" duration="3086000" />
+      <workItem from="1615402239002" duration="1185000" />
     </task>
     <task id="LOCAL-00001" summary="- changed animations, removed attribute style after the animation is done. Right arrow didn't work properly due to &quot;leftover&quot; code from clicking left arrow. Attribute &quot;left=0&quot; got left behind, and caused the animation on the right arrow to be stuck.&#10;- duration was also adjusted, along with the distance of the object traveling right or left">
       <created>1615399518275</created>
@@ -114,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615399518276</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="- changed some of the code in main.js to be up to ES6 standard. Mostly added arrow functions, where I could, rest was attempted to changed, but retraced due to breaking the functionalities.">
+      <created>1615401528729</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1615401528729</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,13 +143,18 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="- transfered external css, js loads from body to head&#10;- added defer flag to main.js&#10;- changed tags for left and right arrow to &lt;button&gt;, they&#10;are still encapsulated in &lt;div&gt; tag with class arrows for positioning&#10;&#9;* tweaked padding in main.css for both arrow individually&#10;- tweaks on most of the elements in main.css for positioning&#10;- removed horizontal scrollbar with support for all browsers&#10;- wrapped images in &lt;div&gt; with class slider, still part of the container &lt;div&gt;&#10;- implemented SASS&#10;&#9;* Added variables for various stylings&#10;&#9;* Added nesting in multiple classes&#10;&#9;* Added addon.scss which shortens the code in main.scss&#10;- implemented Babel with Node&#10;&#9;* Added babel.config.json and enabled env preset&#10;- implemented UglifyJS and csso-cli (css minification) with Node&#10;&#9;* NOTE: if it doesn't detect auto. command in terminal for manual minification&#10;&#9;&#9;&quot;uglifyjs js/main.js -c -m -o js/main.min.js&quot;&#10;&#9;* Added main.min.js, main.min.css -&gt; minified code" />
     <MESSAGE value="- changed animations, removed attribute style after the animation is done. Right arrow didn't work properly due to &quot;leftover&quot; code from clicking left arrow. Attribute &quot;left=0&quot; got left behind, and caused the animation on the right arrow to be stuck.&#10;- duration was also adjusted, along with the distance of the object traveling right or left" />
-    <option name="LAST_COMMIT_MESSAGE" value="- changed animations, removed attribute style after the animation is done. Right arrow didn't work properly due to &quot;leftover&quot; code from clicking left arrow. Attribute &quot;left=0&quot; got left behind, and caused the animation on the right arrow to be stuck.&#10;- duration was also adjusted, along with the distance of the object traveling right or left" />
+    <MESSAGE value="- changed some of the code in main.js to be up to ES6 standard. Mostly added arrow functions, where I could, rest was attempted to changed, but retraced due to breaking the functionalities." />
+    <option name="LAST_COMMIT_MESSAGE" value="- changed some of the code in main.js to be up to ES6 standard. Mostly added arrow functions, where I could, rest was attempted to changed, but retraced due to breaking the functionalities." />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#File_Watchers" timestamp="1615309249697">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#File_Watchers/0.0.1920.1040/-1600.0.1600.860@0.0.1920.1040" timestamp="1615309249697" />
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1615402956807">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1600.0.1600.860@0.0.1920.1040" timestamp="1615402956807" />
     <state x="0" y="211" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1615307787275">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -138,14 +163,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="210" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1600.0.1600.860@0.0.1920.1040" timestamp="1613395657925" />
-    <state x="585" y="114" width="820" height="851" key="CommitChangelistDialog2" timestamp="1615401192217">
+    <state x="585" y="114" width="820" height="851" key="CommitChangelistDialog2" timestamp="1615403112967">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="114" width="820" height="851" key="CommitChangelistDialog2/0.0.1920.1040/-1600.0.1600.860@0.0.1920.1040" timestamp="1615401192217" />
-    <state x="594" y="298" width="662" height="666" key="EditFileWatcherDialog" timestamp="1615386982783">
+    <state x="585" y="114" width="820" height="851" key="CommitChangelistDialog2/0.0.1920.1040/-1600.0.1600.860@0.0.1920.1040" timestamp="1615403112967" />
+    <state x="594" y="298" width="662" height="666" key="EditFileWatcherDialog" timestamp="1615402563273">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="594" y="298" width="662" height="666" key="EditFileWatcherDialog/0.0.1920.1040/-1600.0.1600.860@0.0.1920.1040" timestamp="1615386982783" />
+    <state x="594" y="298" width="662" height="666" key="EditFileWatcherDialog/0.0.1920.1040/-1600.0.1600.860@0.0.1920.1040" timestamp="1615402563273" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1615402788624">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1600.0.1600.860@0.0.1920.1040" timestamp="1615402788624" />
     <state width="938" height="282" key="GridCell.Tab.0.bottom" timestamp="1615308595213">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -218,20 +247,24 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="796" y="231" key="RollbackChangesDialog/0.0.1920.1040/-1600.0.1600.860@0.0.1920.1040" timestamp="1615304844665" />
-    <state x="361" y="87" key="SettingsEditor" timestamp="1615387172114">
+    <state x="361" y="87" key="SettingsEditor" timestamp="1615402565714">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1299" y="72" key="SettingsEditor/0.0.1920.1040/-1600.0.1600.860@-1600.0.1600.860" timestamp="1613937436048" />
-    <state x="361" y="87" key="SettingsEditor/0.0.1920.1040/-1600.0.1600.860@0.0.1920.1040" timestamp="1615387172114" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1615399544573">
+    <state x="361" y="87" key="SettingsEditor/0.0.1920.1040/-1600.0.1600.860@0.0.1920.1040" timestamp="1615402565714" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1615401530334">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1600.0.1600.860@0.0.1920.1040" timestamp="1615399544573" />
-    <state x="176" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1615398943738">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1600.0.1600.860@0.0.1920.1040" timestamp="1615401530334" />
+    <state x="176" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1615402244322">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1453" y="287" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1600.0.1600.860@-1600.0.1600.860" timestamp="1613919246782" />
-    <state x="176" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1600.0.1600.860@0.0.1920.1040" timestamp="1615398943738" />
+    <state x="176" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1600.0.1600.860@0.0.1920.1040" timestamp="1615402244322" />
+    <state x="826" y="386" width="250" height="278" key="jetbrains.javascript.buildTools.run-task-popup" timestamp="1615402800741">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="826" y="386" width="250" height="278" key="jetbrains.javascript.buildTools.run-task-popup/0.0.1920.1040/-1600.0.1600.860@0.0.1920.1040" timestamp="1615402800741" />
     <state x="-1137" y="180" width="672" height="678" key="search.everywhere.popup" timestamp="1613661047586">
       <screen x="-1600" y="0" width="1600" height="860" />
     </state>

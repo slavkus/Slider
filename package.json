@@ -12,6 +12,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
+    "@babel/cli": "^7.13.10",
     "@babel/core": "^7.13.10",
     "@babel/preset-env": "^7.13.10",
     "babel-cli": "^6.26.0",
@@ -23,6 +24,7 @@
     "parcel-bundler": "^1.12.4"
   },
   "dependencies": {
+    "@babel/polyfill": "^7.12.1",
     "uglifyjs": "^2.4.11"
   }
 }
