@@ -1,0 +1,47 @@
+$backgroundCol: #DDDDDD;
+$arrowCol: #cdcfd1;
+$stockTextFont: Source Sans Pro;
+$skupElementaFont: 'Liberation Sans', sans-serif;
+$skupElementaSize: 15px;
+$skupElementaColor: #FFFFFF;
+
+@mixin dimHeadFoot {
+  width: 940px;
+  height: 100px;
+  position: absolute;
+}
+
+@mixin itemForBox {
+  font:{
+    family: $skupElementaFont;
+    size: $skupElementaSize;
+  }
+  color: $skupElementaColor;
+  background: $backgroundCol;
+  display: flex;
+  align-items: flex-end;
+}
+
+@mixin arrowHovers {
+  transition: background-color 0.5s ease-in-out;
+  background-color: $arrowCol;
+}
+
+@mixin arrowSettings {
+  transition: background-color 0.5s ease-in-out;
+  height: 60px;
+  width: inherit;
+  padding:{
+    left: 8px;
+    top: 8px;
+  }
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+@mixin rowSettings {
+  display: flex;
+  flex-direction: row;
+  grid-gap: 10px;
+  position: absolute;
+}

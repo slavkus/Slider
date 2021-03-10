@@ -6,67 +6,67 @@
   <title>Slider</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="css/main.css">
-
-</head>
-
-<body>
+  <link rel="stylesheet" href="css/main.min.css">
   <link rel="stylesheet" href="jquery/jquery-ui.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <!--<script src="jquery/external/jquery/jquery.js"></script>
   <script src="jquery/jquery-ui.min.js"></script>-->
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/main.js" defer></script>
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
   <link href="http://fonts.cdnfonts.com/css/liberation-sans" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="header">
+  <div class="boxH1"></div>
+  <div class="boxH2">
+    <p>Skup elemenata na stranici</p>
+  </div>
+</div>
 
 <div class="container">
-  <div class="header">
-    <div class="boxH1"></div>
-    <div class="boxH2">
-      <p class="skupElementaHeader">Skup elemenata na stranici</p>
+  <div class="slider">
+    <div class="topRow">
+      <div class="fitItem">
+        <img src="img/slider-image-1.jpg"/>
+      </div>
+      <div class="fitItem">
+        <img src="img/slider-image-2.jpg"/>
+      </div>
+      <div class="fitItem">
+        <img src="img/slider-image-3.jpg"/>
+      </div>
+      <div class="fitItem">
+        <img src="img/slider-image-4.jpg"/>
+      </div>
+      <div class="fitItem">
+        <img src="img/slider-image-5.jpg"/>
+      </div>
+      <div class="fitItem">
+        <img src="img/slider-image-6.jpg"/>
+      </div>
+    </div>
+
+    <div class="botRow">
+      <div class="fitItem">
+        <img src="img/slider-image-7.jpg"/>
+      </div>
+      <div class="fitItem">
+        <img src="img/slider-image-8.jpg"/>
+      </div>
+      <div class="fitItem">
+        <img src="img/slider-image-9.jpg"/>
+      </div>
+      <div class="fitItem">
+        <img src="img/slider-image-10.jpg"/>
+      </div>
+      <div class="fitItem">
+        <img src="img/slider-image-11.jpg"/>
+      </div>
     </div>
   </div>
-
-  <div class="topRow">
-    <div class="fitItem">
-      <img src="img/slider-image-1.jpg"/>
-    </div>
-    <div class="fitItem">
-      <img src="img/slider-image-2.jpg"/>
-    </div>
-    <div class="fitItem">
-      <img src="img/slider-image-3.jpg"/>
-    </div>
-    <div class="fitItem">
-      <img src="img/slider-image-4.jpg"/>
-    </div>
-    <div class="fitItem">
-      <img src="img/slider-image-5.jpg"/>
-    </div>
-    <div class="fitItem">
-      <img src="img/slider-image-6.jpg"/>
-    </div>
-  </div>
-
-  <div class="botRow">
-    <div class="fitItem">
-      <img src="img/slider-image-7.jpg"/>
-    </div>
-    <div class="fitItem">
-      <img src="img/slider-image-8.jpg"/>
-    </div>
-    <div class="fitItem">
-      <img src="img/slider-image-9.jpg"/>
-    </div>
-    <div class="fitItem">
-      <img src="img/slider-image-10.jpg"/>
-    </div>
-    <div class="fitItem">
-      <img src="img/slider-image-11.jpg"/>
-    </div>
-  </div>
-
   <div class="stockText">
     <div class="textHead">
       <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit </p>
@@ -80,20 +80,19 @@
   </div>
 
   <div class="arrows">
-    <div class="leftArrow">
+    <button class="leftArrow">
       <img src="img/arrow-blue-left.png"/>
-    </div>
-    <div class="rightArrow">
+    </button>
+    <button class="rightArrow">
       <img src="img/arrow-blue-right.png"/>
-    </div>
+    </button>
   </div>
+</div>
 
-  <div class="footer">
-    <div class="boxF">
-      <p class="skupElementaFooter">Skup elemenata na stranici</p>
-    </div>
+<div class="footer">
+  <div class="boxF">
+    <p>Skup elemenata na stranici</p>
   </div>
-
 </div>
 </body>
 

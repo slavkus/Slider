@@ -3,21 +3,21 @@ body {
   height: 730px;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
-  -ms-overflow-style: none;
-  /* Internet Explorer 10+ */
-  scrollbar-width: none;
-  /* Firefox */
+
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
 }
 
 /* Header */
+
 .header {
   display: flex;
   align-items: center;
   width: 940px;
   height: 100px;
+  top: 0;
   position: absolute;
   left: 25%;
-  top: 0;
 }
 
 .boxH1 {
@@ -25,6 +25,7 @@ body {
   height: 100px;
   left: 0px;
   top: 0px;
+
   background: #DDDDDD;
   border-radius: 0px 0px 5px 5px;
 }
@@ -35,27 +36,30 @@ body {
   height: 100px;
   left: 320px;
   top: 0px;
+
   background: #DDDDDD;
   border-radius: 0px 0px 5px 5px;
 }
 
-.boxH2 p {
+.skupElementaHeader {
   position: absolute;
   width: 245px;
   height: 18px;
   left: 80px;
   top: 30px;
   /* Substitute for Neue Helvetica */
-  font-family: "Liberation Sans", sans-serif;
+  font-family: 'Liberation Sans', sans-serif;
   font-size: 15px;
-  color: #FFFFFF;
-  background: #DDDDDD;
+  line-height: 18px;
+
   display: flex;
   align-items: flex-end;
-  line-height: 18px;
+
+  color: #FFFFFF;
 }
 
 /* Container */
+
 .container {
   position: absolute;
   width: 940px;
@@ -66,23 +70,24 @@ body {
 }
 
 body::-webkit-scrollbar {
-  display: none;
-  /* Safari and Chrome */
+  display: none;  /* Safari and Chrome */
 }
 
 /* Slider */
-.slider {
+
+.slider{
   display: flex;
   flex-direction: column;
   grid-gap: 10px;
   position: absolute;
   height: 410px;
   width: 1230px;
-  top: 25%;
+  top: 70px;
   right: 300px;
 }
 
 /* Parents (Images) */
+
 .topRow {
   display: flex;
   flex-direction: row;
@@ -98,8 +103,8 @@ body::-webkit-scrollbar {
   display: flex;
   flex-direction: row;
   grid-gap: 10px;
-  position: absolute;
   width: fit-content;
+  position: absolute;
   width: 1080px;
   height: 200px;
   /*right: 480px;*/
@@ -107,6 +112,7 @@ body::-webkit-scrollbar {
 }
 
 /* Children (images) */
+
 img {
   max-height: 100%;
   width: auto;
@@ -120,13 +126,14 @@ img {
 }
 
 /* Arrows */
+
 .arrows {
   display: grid;
   position: absolute;
   width: 60px;
   height: 130px;
   right: 320px;
-  top: 53%;
+  top: 280px;
 }
 
 .leftArrow {
@@ -135,9 +142,9 @@ img {
   width: inherit;
   padding-left: 8px;
   padding-top: 8px;
+  border: 1px solid #DDDDDD;
   box-sizing: border-box;
   border-radius: 5px;
-  border: 1px solid #DDDDDD;
 }
 
 .leftArrow:hover {
@@ -151,9 +158,9 @@ img {
   width: inherit;
   padding-left: 8px;
   padding-top: 8px;
+  border: 1px solid #134880;
   box-sizing: border-box;
   border-radius: 5px;
-  border: 1px solid #134880;
 }
 
 .rightArrow:hover {
@@ -162,15 +169,17 @@ img {
 }
 
 /* Stock Text */
+
 .stockText {
   position: absolute;
   width: 300px;
   height: 296px;
   right: 0;
-  top: 22%;
+  top: 30px;
 }
 
 .textHead {
+
   font-family: Source Sans Pro;
   font-style: normal;
   font-weight: bold;
@@ -179,53 +188,59 @@ img {
   display: flex;
   align-items: flex-end;
   letter-spacing: -0.2px;
+
   color: #134880;
 }
 
 .textContent {
+
   font-family: Source Sans Pro;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 26px;
+
   display: flex;
   align-items: center;
   letter-spacing: -0.2px;
+
   color: #484A4C;
 }
 
+
 /* Footer */
+
 .footer {
+  position: absolute;
   width: 940px;
   height: 100px;
-  position: absolute;
-  bottom: 0;
   left: 25%;
+  bottom: 0;
 }
 
 .boxF {
+  position: absolute;
   width: 940px;
   height: 100px;
-  position: absolute;
   bottom: 0;
+
   background: #DDDDDD;
   border-radius: 0px 0px 5px 5px;
 }
 
-.boxF p {
+.skupElementaFooter {
   position: absolute;
   width: 245px;
   height: 18px;
   left: 81px;
   top: 32px;
   /* Substitute for Neue Helvetica */
-  font-family: "Liberation Sans", sans-serif;
+  font-family: 'Liberation Sans', sans-serif;
   font-size: 15px;
-  color: #FFFFFF;
-  background: #DDDDDD;
+  line-height: 18px;
+
   display: flex;
   align-items: flex-end;
-  line-height: 18px;
-}
 
-/*# sourceMappingURL=main.css.map */
+  color: #FFFFFF;
+}

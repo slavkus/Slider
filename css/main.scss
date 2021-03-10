@@ -1,0 +1,215 @@
+@import "addon";
+
+body {
+  width: 1920px;
+  height: 730px;
+  font:{
+    family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    weight: 300;
+  }
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Header */
+
+.header {
+  display: flex;
+  align-items: center;
+  @include dimHeadFoot;
+  left: 25%;
+  top: 0;
+}
+
+.boxH1 {
+  width: 300px;
+  height: 100px;
+  left: 0px;
+  top: 0px;
+  background: $backgroundCol;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.boxH2 {
+  position: absolute;
+  width: 620px;
+  height: 100px;
+  left: 320px;
+  top: 0px;
+
+  background: $backgroundCol;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.boxH2 {
+  p {
+    position: absolute;
+    width: 245px;
+    height: 18px;
+    left: 80px;
+    top: 30px;
+    /* Substitute for Neue Helvetica */
+    @include itemForBox;
+    line-height: 18px;
+  }
+}
+
+/* Container */
+
+.container {
+  position: absolute;
+  width: 940px;
+  top: 110px;
+  bottom: 110px;
+  left: 25%;
+  background: #FFFFFF;
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+/* Slider */
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 10px;
+  position: absolute;
+  height: 410px;
+  width: 1230px;
+  top: 25%;
+  right: 300px;
+}
+
+/* Parents (Images) */
+
+.topRow {
+  @include rowSettings;
+  max-width: 1230px;
+  height: 200px;
+  /*right: 320px;*/
+  top: 0;
+}
+
+.botRow {
+  @include rowSettings;
+  width: fit-content;
+  width: 1080px;
+  height: 200px;
+  /*right: 480px;*/
+  bottom: 0;
+}
+
+/* Children (images) */
+
+img {
+  max-height: 100%;
+  width: auto;
+  border-radius: 5px;
+  position: relative;
+}
+
+.fitItem {
+  position: relative;
+  height: 200px;
+}
+
+/* Arrows */
+
+.arrows {
+  display: grid;
+  position: absolute;
+  width: 60px;
+  height: 130px;
+  right: 320px;
+  top: 53%;
+}
+
+.leftArrow {
+  @include arrowSettings;
+  border: 1px solid #DDDDDD;
+}
+
+.leftArrow:hover {
+  @include arrowHovers;
+}
+
+.rightArrow {
+  @include arrowSettings;
+  border: 1px solid #134880;
+}
+
+.rightArrow:hover {
+  @include arrowHovers;
+}
+
+/* Stock Text */
+
+.stockText {
+  position: absolute;
+  width: 300px;
+  height: 296px;
+  right: 0;
+  top: 22%;
+}
+
+.textHead {
+  font: {
+    family: $stockTextFont;
+    style: normal;
+    weight: bold;
+    size: 32px;
+  }
+  line-height: 40px;
+  display: flex;
+  align-items: flex-end;
+  letter-spacing: -0.2px;
+
+  color: #134880;
+}
+
+.textContent {
+  font: {
+    family: $stockTextFont;
+    style: normal;
+    weight: normal;
+    size: 18px;
+  }
+  line-height: 26px;
+
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.2px;
+
+  color: #484A4C;
+}
+
+
+/* Footer */
+
+.footer {
+  @include dimHeadFoot;
+  bottom: 0;
+  left: 25%;
+}
+
+.boxF {
+  @include dimHeadFoot;
+  bottom: 0;
+  background: $backgroundCol;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.boxF {
+  p {
+    position: absolute;
+    width: 245px;
+    height: 18px;
+    left: 81px;
+    top: 32px;
+    /* Substitute for Neue Helvetica */
+    @include itemForBox;
+    line-height: 18px;
+  }
+}
